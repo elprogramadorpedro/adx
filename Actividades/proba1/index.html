@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        /* Agrega estilos CSS según sea necesario */
+    </style>
+</head>
+
+<body>
+    <h1>Registro de Usuario</h1>
+    <form id="registroForm">
+        <h3>1. Estructura de Componentes:</h3>
+        <p><input type="checkbox" id="step1"> Crea un componente principal llamado `Registro` que contendrá todo el
+            formulario de registro.</p>
+        <p><input type="checkbox" id="step2"> Divide el formulario en componentes más pequeños para manejar cada campo
+            por separado.</p>
+
+        <h3>2. Campos de Entrada:</h3>
+        <p><input type="checkbox" id="step3"> Crea componentes para cada campo de entrada del formulario: Nombre,
+            Apellido, Email, Contraseña y Repetir Contraseña.</p>
+        <p><input type="checkbox" id="step4"> Utiliza los componentes `<input>` de HTML y proporciona los atributos
+            necesarios para cada campo.</p>
+
+        <h3>3. Atributos de los Campos de Entrada:</h3>
+        <p><input type="checkbox" id="step5"> Para el campo de `Nombre` y `Apellido`, puedes usar solo el atributo
+            `type="text"`.</p>
+        <p><input type="checkbox" id="step6"> Para el campo de `Email`, utiliza `type="email"` para validar
+            automáticamente la entrada como una dirección de correo electrónico.</p>
+
+        <h3>4. Validación de Campos:</h3>
+        <p><input type="checkbox" id="step7"> Agrega atributos adicionales según sea necesario, como `required` para
+            asegurarte de que los campos no estén vacíos.</p>
+        <p><input type="checkbox" id="step8"> Utiliza `minLength` y `maxLength` para establecer la longitud mínima y
+            máxima permitida para los campos de texto.</p>
+
+        <h3>5. Vinculación de Estado:</h3>
+        <p><input type="checkbox" id="step9"> Utiliza el estado del componente para almacenar los valores ingresados por
+            el usuario en cada campo del formulario.</p>
+        <p><input type="checkbox" id="step10"> Usa el método `useState` de React para crear estados para cada campo.</p>
+
+        <h3>6. Manejo de Eventos:</h3>
+        <p><input type="checkbox" id="step11"> Implementa manejadores de eventos para los cambios en los campos de
+            entrada y actualiza el estado correspondiente.</p>
+        <p><input type="checkbox" id="step12"> Utiliza el evento `onChange` para capturar los cambios en los campos de
+            texto y actualizar el estado.</p>
+
+        <h3>7. Validación de Contraseña:</h3>
+        <p><input type="checkbox" id="step13"> Agrega lógica para verificar si la contraseña y la repetición de la
+            contraseña coinciden.</p>
+        <p><input type="checkbox" id="step14"> Muestra un mensaje de error si las contraseñas no coinciden.</p>
+
+        <h3>8. Enviar Formulario:</h3>
+        <p><input type="checkbox" id="step15"> Implementa un manejador de eventos para el envío del formulario.</p>
+        <p><input type="checkbox" id="step16"> Utiliza el evento `onSubmit` para capturar el envío del formulario y
+            procesar los datos del usuario.</p>
+
+        <h3>9. Estilos:</h3>
+        <p><input type="checkbox" id="step17"> Agrega estilos CSS para hacer que el formulario se vea atractivo y fácil
+            de usar.</p>
+        <p><input type="checkbox" id="step18"> Utiliza clases de CSS para aplicar estilos coherentes y reutilizables en
+            todo el formulario.</p>
+
+        <h3>10. Mensajes de Confirmación:</h3>
+        <p><input type="checkbox" id="step19"> Muestra mensajes de confirmación después de enviar el formulario con
+            éxito.</p>
+        <p><input type="checkbox" id="step20"> Utiliza una ventana emergente o un mensaje en línea para informar al
+            usuario sobre el éxito del registro.</p>
+
+        <h3>11. Implementación del Botón de Entrar o Link:</h3>
+        <p>Crea un botón de enviar o un enlace para permitir que los usuarios envíen el formulario o naveguen a otra
+            página si ya están registrados.</p>
+        <p>Asigna una función para manejar el clic en el botón o el enlace.</p>
+
+        <h3>12. Pruebas y Depuración:</h3>
+        <p>Realiza pruebas exhaustivas del formulario en diferentes navegadores y dispositivos para garantizar su
+            funcionalidad y usabilidad.</p>
+        <p>Depura cualquier error o comportamiento inesperado que encuentres durante las pruebas.</p>
+
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

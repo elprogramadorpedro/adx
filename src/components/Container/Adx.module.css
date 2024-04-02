@@ -1,0 +1,201 @@
+.containerApp {
+  width: 430px;
+  height: 932px;
+  background-color: #151822;
+  color: white;
+  -webkit-box-shadow: 7px -9px 18px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 7px -9px 18px -7px rgba(0,0,0,0.75);
+  box-shadow: 7px -9px 18px -7px rgba(0,0,0,0.75);
+  border-radius: 8px; 
+  transition: box-shadow 1s ease; /* Transición suave */
+}
+
+.boxLogo {
+  height: 313px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.imgPass {
+  width: 157px;
+}
+
+.boxTitle {
+  height: 66px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.titleAdx {
+  font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.paragCustom {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  margin-right: 11px;
+}
+
+.custonCheck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+
+  .customCheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white; /* Fondo blanco */
+    border: 3px solid rgb(11, 235, 59); /* Borde verde de 3px */
+    border-radius: 5px; /* Radio de borde de 5px */
+  }
+
+  .customCheckbox input[type="checkbox"] {
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    width: 18px;
+    height: 18px;
+    background-color: black; /* Icono de verificación negro */
+    border-radius: 2px; /* Ajusta según lo deseado */
+    display: none;
+  }
+
+  .customCheckbox input[type="checkbox"]:checked + .checkmark {
+    display: block;
+  }
+}
+
+.customCheckbox {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgb(11, 235, 59); /* Cambiar el borde a 3px de grosor y verde */
+  border-radius: 5px; /* Añadir radio de borde de 5px */
+}
+
+.customCheckbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkmark {
+  background-color: transparent;
+}
+
+/* Agregar estilos cuando el checkbox está marcado */
+.customCheckbox input[type="checkbox"]:checked + .checkmark {
+  background-color: rgb(255, 255, 255);
+  width: 80px; /* Ancho del icono */
+  height: 10px; /* Altura del icono */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(
+    -45deg
+  ); /* Rotación para simular el icono de verificación */
+  border: 2px solid white; /* Borde blanco del icono */
+}
+
+.checkmark::before {
+  content: ""; /* Pseudo-elemento para el icono */
+  position: absolute;
+
+  transform: translate(-50%, -50%) rotate(-90deg); /* Centra y rota el icono */
+  width: 12px; /* Ancho del icono */
+  height: 22px; /* Altura del icono */
+  border-style: solid; /* Establece el estilo del borde */
+  border-width: 3px 0px 0px 3px; /* Grosor y forma del borde para simular el icono de aprobado */
+  border-color: rgb(0, 160, 13); /* Color del borde */
+}
+
+.boxSize {
+ 
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: end;
+  margin-right: 75px;
+  line-height: 1;
+  align-items: center;
+}
+
+
+
+
+
+/*Hide arrows*/
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.groupButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 64px;
+}
+
+.buttonPass {
+  width: 325px;
+  height: 71px;
+  background-color: #262632;
+  border-radius: 45px;
+  border: 0;
+  font-size: 1.5rem;
+  color: aliceblue;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+.buttonPass:hover{
+   
+    border: 2px solid #909092;
+}
+
+.buttonCopy{
+  width: 325px;
+  height: 71px;
+  background-color: #f58529;
+  border-radius: 45px;
+  border: 0;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.buttonCopy:hover{
+    border: 2px solid #909092;
+}
+
+.boxSenha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.senha {
+  width: 325px;
+  height: 50px;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}

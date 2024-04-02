@@ -1,0 +1,21 @@
+.paraSize {
+    line-height: 1;
+    font-weight: 300;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+  }
+
+  .sizeBox {
+    width: 85px;
+    height: 32px;
+    border-radius: 45px;
+    background-color: #797979;
+    margin-left: 16px;
+    border: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 14px;
+  }
+
+ 
